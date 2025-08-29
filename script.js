@@ -38,7 +38,7 @@ copyButtons.forEach(function (button) {
 });
 
 
-//  call buttons 
+//  call buttons Functionalities:
 
 
 const callButtons = document.getElementsByClassName("call-btn");
@@ -62,5 +62,27 @@ for (let btn of callButtons) {
         const number = card.querySelector(".argent-num").innerText;
 
         alert(`📞 Calling ${title} ${number}`);
-    })
+
+
+ // call history Functionalities:
+ 
+
+        const time = new Date().toLocaleTimeString();
+
+        const div = document.createElement("div");
+        div.className = "flex justify-between items-center bg-[#f2f2f2] text-[#5c5c5c] p-3 mb-2 rounded-lg";
+        div.innerHTML = `
+          <div>
+            <h1>${title}</h1>
+            <p>${number}</p>
+          </div>
+          <div>
+            <p>${time}</p>
+          </div>
+        `;
+        historyBox.appendChild(div);
+    });
 }
+
+
+
