@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Emergency Hotline Services</title>
 
-     <!-- tailwind css -->
+    <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font Awesome cdn -->
@@ -20,8 +21,49 @@
     <link rel="stylesheet" href="./styles/style.css">
 
 </head>
-<body>
-     <!-- js  -->
+
+
+<body class="hind-madurai">
+
+
+    <!-- nav section -->
+
+    <section>
+        <div class="bg-white  px-[36px] py-[14px]  ">
+            <div class="flex flex-col md:flex-row justify-between h-[100px]  ">
+                <div class="flex items-center gap-3">
+                    <div>
+                        <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[#006747] text-xl">Emergency <br> Services</h1>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-3 md:mt-0 items-center gap-5  ">
+                    <div
+                        class="flex items-center gap-3  bg-[#41ff6b1a] font-bold px-[18px] py-[7px] md:px-[36px] py-[14px] rounded-4xl">
+                        <p id="heart-count">0</p>
+                        <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
+                    </div>
+                    <div
+                        class="flex items-center gap-3  bg-[#41ff6b1a] font-bold px-[18px] py-[7px] md:px-[36px] py-[14px] rounded-4xl">
+                        <p id="coin-count">100</p>
+                        <img class="w-[24px] h-[24px]" src="./assets/coin.png" alt="">
+                    </div>
+                    <div
+                        class=" bg-[#00A63E] text-white px-[15px] py-[7px] md:px-[36px] py-[14px] rounded-3xl whitespace-nowrap">
+                        <p><span id="copy-count">0 </span>Copy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- js  -->
     <script src="./script.js"></script>
 </body>
+
 </html>
