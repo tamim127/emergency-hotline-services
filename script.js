@@ -9,7 +9,7 @@ for (let btn of heartButtons) {
     });
 }
 
-// Copy button Functionalities
+// Copy button Functionalities:
 
 const copyButtons = document.querySelectorAll(".copy-btn");
 const copyCount = document.getElementById("copy-count");
@@ -36,3 +36,31 @@ copyButtons.forEach(function (button) {
             });
     });
 });
+
+
+//  call buttons 
+
+
+const callButtons = document.getElementsByClassName("call-btn");
+const coinCount = document.getElementById("coin-count");
+const historyBox = document.getElementById("call-history");
+
+for (let btn of callButtons) {
+    btn.addEventListener("click", function () {
+        let coin = parseInt(coinCount.innerText);
+        const coinCost = 20;
+
+        if (coin < coinCost) {
+            alert("Not enough coins! You need at least 20 coins to make a call");
+            return;
+        }
+
+        coinCount.innerText = coin - coinCost;
+
+        const card = btn.parentNode.parentNode
+        const title = card.querySelector("h1").innerText;
+        const number = card.querySelector(".argent-num").innerText;
+
+        alert(`📞 Calling ${title} ${number}`);
+    })
+}
