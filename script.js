@@ -82,4 +82,11 @@ for (let btn of callButtons) {
     });
 }
 
+//   clear history Functionalities: 
+
+document.getElementById("clear-history").addEventListener("click", function () {
+    historyBox.innerHTML = "";
+});
+
+
 
